@@ -1,3 +1,6 @@
+#ifndef mArena_h
+#define mArena_h
+
 #include <stdlib.h>
 
 typedef struct {
@@ -40,3 +43,6 @@ void arena_reset(Arena *arena) { arena->used = 0; }
 size_t arena_size(Arena *arena) { return arena->capacity; }
 
 size_t arena_used(Arena *arena) { return arena->used; }
+
+#endif // !mArena_h
+
